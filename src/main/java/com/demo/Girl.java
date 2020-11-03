@@ -10,10 +10,9 @@ import org.springframework.stereotype.Component;
 @Component
 @Scope("prototype")
 public class Girl {
-
-    private Outfit outfit;
-    private Accessories accessories;
-    private HairStyle hairStyle;
+    private final Outfit outfit;
+    private final Accessories accessories;
+    private final HairStyle hairStyle;
 
     @Autowired
     public Girl(Outfit outfit, Accessories accessories, HairStyle hairStyle) {
